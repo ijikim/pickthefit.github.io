@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+h2{font-weight: 800; font-size: clamp(1.875rem, 2vw, 2.1875rem);}
+h3{font-weight: 700; font-size: clamp(1.5625rem, 2vw, 1.875rem);}
+h4{font-weight: 200; font-size: clamp(1.25rem, 2vw, 1.5625rem);}
+h5{font-weight: 700; font-size: clamp(1.25rem, 2vw, 1.5625rem);}
+h6{font-weight: 500; font-size: clamp(1.00rem, 2vw, 1.25rem);}
+.BigBT{font-weight: 700; font-size: clamp(1.00rem, 2vw, 1.25rem);}
+.BigRT{font-weight: 400; font-size: clamp(1.00rem, 2vw, 1.25rem);}
+.BigLT{font-weight: 200; font-size: clamp(1.00rem, 2vw, 1.25rem);}
+.SmallLT{font-weight: 200; font-size: clamp(0.8125rem, 2vw, 0.9375rem);}
+.SmallRT{font-weight: 400; font-size: clamp(0.8125rem, 2vw, 0.9375rem);}
+.SmallBT{font-weight: 700; font-size: clamp(0.8125rem, 2vw, 0.9375rem);}
+/*룩북 페이지*/
+#looktab-box>ul>li,
+#categoryBtn-search{font-weight: 400; font-size: clamp(1.00rem, 2vw, 1.25rem);}
+#categoryBtn{font-weight: 700; font-size: clamp(1.00rem, 2vw, 1.25rem);}
+#gallerytab-box,
+#gallerytab-box>span{font-weight: 400; font-size: clamp(0.8125rem, 2vw, 0.9375rem);}
+.info ul>li>p,
+.cartBtn{font-weight: 400; font-size: clamp(0.9375rem, 2vw, 1.125rem);}
+.brand-name,
+.fixed-price{font-weight: 400; font-size: clamp(0.8125rem, 2vw, 0.9375rem);}
+.product-name,
+.discounted-price,
+.product-sale{font-weight: 400; font-size: clamp(0.9375rem, 2vw, 1.125rem);}

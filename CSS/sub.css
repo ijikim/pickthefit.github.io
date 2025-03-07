@@ -1,0 +1,329 @@
+@media screen and (min-width: 1181px) {
+    /*lookbook-detail style*/
+    #lookbook-detail{
+        display: flex;
+        flex-direction: column;
+        gap: 6.25rem;
+        width: 67.5rem;
+        margin: 30px auto 6.25rem;
+        padding-top: 6.25rem;
+    }
+    #lookbook-detail>div>h5{margin-bottom: 30px;}
+    /*detail-content style*/
+    #detail-content{display: flex;}
+    /*detail-img style*/
+    #image-box{
+        position: relative;
+        width: 640px;
+        overflow: hidden;
+    }
+    #image-box>ul{display: flex; width: calc(640*4);}
+    #image-box img{width: 640px !important; height: 845px !important;}
+    #image-box .imgNum{
+        position: absolute;
+        top: 15px; left: 15px;
+        width: 55px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.7);
+    }
+    /*profile style*/
+    #profile-box, .profile, .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #profile-box{
+        gap: 30px;
+        justify-content: center;
+        width: 440px;
+        height: 845px;
+        background: #fafafa;
+    }
+    .profile{gap: 15px;}
+    .info{gap: 20px;}
+    .profileImg{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: url(../img/contents/lookbook_detail/img/profile.jpg)no-repeat 0 0;
+        background-size: cover;
+    }
+    .info>ul>li{
+        display: flex;
+        width: 220px;
+        line-height: 35px;
+        justify-content: space-between;
+    }
+    /*button style*/
+    .profileBtn, .cartBtn{
+        background: #000;
+        color: #fff;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .profileBtn{
+        width: 70px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .cartBtn{
+        width: 180px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .profileBtn:hover, .cartBtn:hover{background: #ebebeb; color: #000;}
+    /*product style*/
+    #detail_product ul, #detail_recommend ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
+    }
+    #detail_product ul>li, #detail_recommend ul>li{
+        width: 340px;
+        max-height: 535px;
+        background: #fafafa;
+        border-radius: 15px;
+    }
+    #detail_product img, #detail_recommend img{
+        background-color: #f2f2f2;
+        border-radius: 15px 15px 0 0;
+    }
+    #detail_product a, #detail_recommend a{color: #000;}
+    #detail_product .product_title{padding: 30px 30px 50px;}
+    #detail_recommend .product_title{padding: 30px 30px 50px;}
+    #detail_product .buy{
+        text-align: end;
+        margin-top: 25px;
+    }
+    #detail_product .buy>span{margin-right: 5px;}
+
+}
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+    /*lookbook-detail style*/
+    #lookbook-detail{
+        display: flex;
+        flex-direction: column;
+        gap: 6.25rem;
+        width: 90%;
+        margin: 30px auto 6.25rem;
+        padding-top: 150px;
+    }
+    #lookbook-detail>div>h5{margin-bottom: 30px;}
+    /*detail-content style*/
+    #detail-content{
+        display: flex;
+        width: 100%;
+        height: 80.75vw;
+    }
+    /*detail-img style*/
+    #image-box{
+        position: relative;
+        width: 68%;
+        overflow: hidden;
+    }
+    #image-box>ul{
+        display: flex;
+        width: calc(100%*4);
+    }
+    #image-box>ul>li{width: 100%; height: 80.75vw;}
+    #image-box img{
+        width: 100% !important;
+        height: 100% !important;
+    }
+    #image-box .imgNum{
+        position: absolute;
+        top: 15px; left: 15px;
+        width: 55px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.7);
+    }
+    /*profile style*/
+    #profile-box, .profile, .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #profile-box{
+        gap: 3%;
+        justify-content: center;
+        width: 32%;
+        height: 100%;
+        background: #fafafa;
+    }
+    .profile{gap: 12px;}
+    .info{gap: 15px;}
+    .profileImg{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: url(../img/contents/lookbook_detail/img/profile.jpg)no-repeat 0 0;
+        background-size: cover;
+    }
+    .info>ul>li{
+        display: flex;
+        width: 18vw;
+        line-height: 3.6vw;
+        justify-content: space-between;
+    }
+    /*button style*/
+    .profileBtn, .cartBtn{
+        background: #000;
+        color: #fff;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .profileBtn{
+        width: 55px;
+        height: 36px;
+        line-height: 36px;
+    }
+    .cartBtn{
+        width: 150px;
+        height: 44px;
+        line-height: 44px;
+    }
+    .profileBtn:hover, .cartBtn:hover{background: #ebebeb; color: #000;}
+    /*product style*/
+    #detail_product ul, #detail_recommend ul{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 3%;
+        row-gap: 2.8vw;
+        justify-content: space-between;
+    }
+    #detail_product ul>li, #detail_recommend ul>li{
+        width: 31.3%;/*228px*/
+        max-height: 600px;/*405px*/
+        background: #fafafa;
+        border-radius: 15px;
+    }
+    #detail_product img, #detail_recommend img{
+        background-color: #f2f2f2;
+        border-radius: 15px 15px 0 0;
+    }
+    #detail_product a, #detail_recommend a{color: #000;}
+    .brandName{padding-bottom: 5px;}
+    #detail_product .product_title{padding: 20px 20px 50px;}
+    #detail_recommend .product_title{padding: 20px 20px 50px;}
+    #detail_product .buy{
+        text-align: end;
+        margin-top: 25px;
+    }
+    #detail_product .buy>span{margin-right: 5px;}
+}
+@media screen and (max-width: 767px) {
+    /*lookbook-detail style*/
+    #lookbook-detail{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        width: 95%;
+        margin: 15px auto 80px;
+        padding-top: 70px;
+    }
+    #lookbook-detail>div>h5{margin-bottom: 20px;}
+    /*detail-content style*/
+    #detail-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    /*detail-img style*/
+    #image-box{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+    #image-box>ul{display: flex; width: calc(100%*4);}
+    #image-box>ul>li{width: 100%; height: auto;}
+    #image-box img{width: 100% !important; height: 100% !important;}
+    #image-box .imgNum{
+        position: absolute;
+        top: 15px; left: 15px;
+        width: 55px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.7);
+    }
+    /*profile style*/
+    #profile-box, .profile, .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #profile-box{
+        gap: 30px;
+        justify-content: center;
+        width: 100%;
+        height: 730px;
+        background: #fafafa;
+    }
+    .profile{gap: 10px;}
+    .info{gap: 15px;}
+    .profileImg{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: url(../img/contents/lookbook_detail/img/profile.jpg)no-repeat 0 0;
+        background-size: cover;
+    }
+    .info>ul>li{
+        display: flex;
+        width: 45vw;
+        line-height: 32px;
+        justify-content: space-between;
+    }
+    /*button style*/
+    .profileBtn, .cartBtn{
+        background: #000;
+        color: #fff;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .profileBtn{
+        width: 60px;
+        height: 35px;
+        line-height: 35px;
+    }
+    .cartBtn{
+        width: 150px;
+        height: 42px;
+        line-height: 42px;
+    }
+    .profileBtn:hover, .cartBtn:hover{background: #ebebeb; color: #000;}
+    /*product style*/
+    #detail_product ul, #detail_recommend ul{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 2.5%;
+        row-gap: 2.2vw;
+        justify-content: space-between;
+    }
+    #detail_product ul>li, #detail_recommend ul>li{
+        width: 48.75%;/*173px*/
+        max-height: 500px;
+        background: #fafafa;
+        border-radius: 15px;
+    }
+    #detail_product img, #detail_recommend img{
+        background-color: #f2f2f2;
+        border-radius: 15px 15px 0 0;
+    }
+    #detail_product a, #detail_recommend a{color: #000;}
+    #detail_product .product_title{padding: 15px 15px 25px;}
+    #detail_recommend .product_title{padding: 15px 15px 25px;}
+    #detail_product .buy{
+        text-align: end;
+        margin-top: 15px;
+    }
+    #detail_product .buy>span{margin-right: 5px;}
+}

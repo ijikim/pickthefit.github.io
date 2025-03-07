@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="나와 패션을 더 가깝게">
+    <meta property="og:url" content="https://pickthefit.dothome.co.kr/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PICK THE FIT">
+    <meta property="og:description" content="나와 패션을 더 가깝게">
+    <meta property="og:image" content="http://pickthefit.dothome.co.kr/BrandName.jpg">
+    <title>PICK THE FIT</title>
+    <link rel="stylesheet" type="text/css" href="CSS/master.css">
+    <link rel="stylesheet" type="text/css" href="CSS/font.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/jQuery.js"></script>
+    <script src="js/scroll.js"></script>
+    
+</head>
+<body id="body">
+    <header id="MainHeader">
+        <div id="MainNav">
+            <h1 id="Logo">
+                <a href="index.html"><img src="img/Logo/logoW.png" alt="PICK THE FTI"></a>
+            </h1>
+            <!--Logo End-->
+            
+            <nav id="Gnb" class="Mobile-none">
+                <ul>
+                    <li id="ABOUT_btn"><a href="#"><h4>ABOUT</h4></a></li>
+                    <li id="LOOKBOOK_btn"><a href="lookbook.html"><h4>LOOKBOOK</h4></a></li>
+                    <li id="SHOP_btn"><a href="#"><h4>SHOP</h4></a></li>
+                    <li id="other_btn"><a href="#"><h4>other</h4></a></li>
+                </ul>
+            </nav>
+            <!--Gnb End-->
+
+            <div id="Lnb" class="Mobile-none">
+                <ul>
+                    <li id="Lnb1">
+                        <h6>회사 소개</h6>
+                        <ul>
+                            <li>
+                                <a href="#" class="SmallLT">인사말</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">브랜드</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">오시는 길</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="Lnb2">
+                        <h6>코디 룩북</h6>
+                        <ul>
+                            <li>
+                                <a href="lookbook.html" class="SmallLT">전체보기</a>
+                            </li>
+                            <li>
+                                <a href="lookbook.html" class="SmallLT">여성</a>
+                            </li>
+                            <li>
+                                <a href="lookbook.html" class="SmallLT">남성</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="Lnb3">
+                        <h6>쇼핑</h6>
+                        <ul>
+                            <li>
+                                <a href="#" class="SmallLT">전체보기</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">여성복</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">남성복</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">남여공용</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="Lnb4">
+                        <h6>기타 서비스</h6>
+                        <ul>
+                            <li>
+                                <a href="#" class="SmallLT">북마크</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">커뮤니티</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">후기</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--Lnb End-->
+
+            <div id="Snb">
+                <ul>
+                    <li class="Mobile-none">
+                        <a href="#">
+                            <p class="SnbIcon SI1">로그인</p>
+                            <p class="SmallLT">LOGIN</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="SnbIcon SI2">장바구니</p>
+                            <p class="SmallLT Mobile-none">CART</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="searchBtn-on">
+                            <p class="SnbIcon SI3">검색</p>
+                            <p class="SmallLT Mobile-none">SEARCH</p>
+                        </a>
+                    </li>
+                    <li class="Mobile-none">
+                        <a href="#">
+                            <p class="SnbIcon SI4">고객센터</p>
+                            <p class="SmallLT">CS</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#" id="toggleBtn-on" class="Mobile">열기</a>
+
+            <div id="Mobile-Nav"  class="Mobile">
+                <ul class="Mobile-profile">
+                    <li>
+                        <a class="profile">프로필 이미지</a>
+                        <p class="BigBT">OOO님, 안녕하세요!</p>
+                    </li>
+                    <li><a href="#" class="Mobile" id="toggleBtn-off">닫기</a></li>
+                </ul>
+                <ul class="Mobile-Snb">
+                    <li><a href="#"><p class="SmallBT">내 정보</p></a></li>
+                    <li><a href="#"><p class="SmallBT">로그아웃</p></a></li>
+                    <li><a href="#"><p class="SmallBT">고객센터</p></a></li>
+                </ul>
+                <ul class="Mobile-Gnb">
+                    <li>
+                        <a href="#">
+                            <p class="BigBT">회사 소개</p>
+                            <p class="PlusBtn">메뉴</p>
+                        </a>
+                        <ul class="Mobile-Lnb">
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">인사말</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">브랜드</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">오시는 길</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="BigBT">코디 룩북</p>
+                            <p class="PlusBtn">메뉴</p>
+                        </a>
+                        <ul class="Mobile-Lnb">
+                            <li>
+                                <a href="lookbook.html">
+                                    <p class="BigLT">전체보기</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="lookbook.html">
+                                    <p class="BigLT">여성</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="lookbook.html">
+                                    <p class="BigLT">남성</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="BigBT">쇼핑</p>
+                            <p class="PlusBtn">메뉴</p>
+                        </a>
+                        <ul class="Mobile-Lnb">
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">전체보기</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">여성복</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">남성복</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">남여공용</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="BigBT">기타 서비스</p>
+                            <p class="PlusBtn">메뉴</p>
+                        </a>
+                        <ul class="Mobile-Lnb">
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">북마크</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">커뮤니티</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">후기</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--MainNav End-->
+    </header>
+    <!--MainHeader End-->
+
+    <div id="Mobile-iconBar" class="Mobile">
+        <ul>
+            <li><a href="index.html"><img src="img/Icon_img/Home.svg" alt="HOME"></a></li>
+            <li><a href="lookbook.html"><img src="img/Icon_img/LookBook.svg" alt="LOOKBOOK"></a></li>
+            <li><a href="#"><img src="img/Icon_img/Shop.svg" alt="SHOP"></a></li>
+            <li><a href="#"><img src="img/Icon_img/MyPage.svg" alt="MY PAGE"></a></li>
+        </ul>
+    </div>
+    <!--bottomIconBox End-->
+
+    <div id="search-container">
+        <a href="#" id="searchBtn-off">닫기</a>
+        <div id="search-inner">
+            <h2>SEARCH</h2>
+            <div id="search-box">
+                <input type="search" placeholder="검색">
+                <input type="image" src="img/Icon_img/search_B.svg" alt="검색 버튼">
+            </div>
+
+            <div id="tab-box">
+                <ul class="tab-title">
+                    <li class="on SmallRT">전체</li>
+                    <li class="SmallRT">10대</li>
+                    <li class="SmallRT">20대</li>
+                    <li class="SmallRT">30대</li>
+                    <li class="SmallRT">40대 이상</li>
+                </ul>
+                <div class="tab-cont">
+                    <div class="on">
+                        <ul class="tab-list">
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">나이키(NIKE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">아디다스(ADIDAS)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">라코스테(LACOSTE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">뉴발란스(NEW BALANCE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">코스(COS)</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="tab-list">
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">나이키(NIKE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">아디다스(ADIDAS)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">뉴발란스(NEW BALANCE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">휠라(FILA)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">반스(VANS)</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="tab-list">
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">나이키(NIKE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">자라(ZARA)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">커버낫(COVERNAT)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">코스(COS)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">유니클로(UNIQLO)</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="tab-list">
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">라코스테(LACOSTE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">코스(COS)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">폴로 랄프 로렌(POLO RALPH LAUREN)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">타미 힐피거(TOMMY HILFIGER)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">빈폴(BEANPOLE)</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="tab-list">
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">라코스테(LACOSTE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">폴로 랄프 로렌(POLO RALPH LAUREN)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">닥스(DAKS)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">헤지스(HAZZYS)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">캠브리지 멤버스(CAMBRIDGE MEMBERS)</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--search-container End-->
+
+    <main id="lookbook-contents">
+        <h2>PICK THE FIT LOOKBOOK</h2>
+        <div id="lookbook-container">
+            <h3>Styling</h3>
+            <div id="looktab-box">
+                <ul>
+                    <li id="all" class="looktabBtn active-tab" data-target="all">전체보기</li>
+                    <li id="woman" class="looktabBtn" data-target="galleryW">여성</li>
+                    <li id="man" class="looktabBtn" data-target="galleryM">남성</li>
+                </ul>
+            </div>
+            <div id="category-box">
+                <div id="categoryBtn">
+                    <p class="BigBT">
+                        세부 카테고리
+                        <span class="BigBT" id="categoryBtn-on">▼</span>
+                        <span class="BigBT" id="categoryBtn-off">▲</span>
+                    </p>
+                </div>
+                <form id="categoryForm" action="#" method="POST">
+                    <ul>
+                        <li>
+                            <p class="BigRT">가격</p>
+                            <div class="form_inner">
+                                <input type="checkbox" id="range10" name="range10" value="">
+                                <label for="range10">10만 원대</label>
+                                
+                                <input type="checkbox" id="range20" name="range20">
+                                <label for="range20">20만 원대</label>
+                                
+                                <input type="checkbox" id="range30" name="range30">
+                                <label for="range30">30만 원대</label>
+                                
+                                <input type="checkbox" id="range40" name="range40">
+                                <label for="range40">40만 원대 이상</label>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="BigRT">나이</p>
+                            <div class="form_inner">
+                                <input type="checkbox" id="10s" name="10s">
+                                <label for="10s">10대</label>
+                                
+                                <input type="checkbox" id="20s" name="20s">
+                                <label for="20s">20대</label>
+                                
+                                <input type="checkbox" id="30s" name="30s">
+                                <label for="30s">30대</label>
+                                
+                                <input type="checkbox" id="40s" name="40s">
+                                <label for="40s">40대 이상</label>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="BigRT">체형</p>
+                            <div id="body-type" class="form_inner">
+                                <div>
+                                    <label for="height" >키(cm)</label>
+                                    <div>
+                                        <input type="text" id="height" name="height" placeholder="100" maxlength="3" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"> -
+                                        <input type="text" name="height" placeholder="250" maxlength="3" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="weight">몸무게(kg)</label>
+                                    <div>
+                                        <input type="text" id="weight" name="weight" placeholder="30" maxlength="3" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"> -
+                                        <input type="text" name="weight" placeholder="150" maxlength="3" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="BigRT">계절</p>
+                            <div class="form_inner">
+                                <input type="checkbox" id="spring" name="spring">
+                                <label for="spring">봄</label>
+                                
+                                <input type="checkbox" id="summer" name="summer">
+                                <label for="summer">여름</label>
+                                
+                                <input type="checkbox" id="fall" name="fall">
+                                <label for="fall">가을</label>
+                                
+                                <input type="checkbox" id="winter" name="winter">
+                                <label for="winter">겨울</label>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="BigRT">상황</p>
+                            <div class="form_inner">
+                                <input type="checkbox" id="daily" name="daily">
+                                <label for="daily">데일리</label>
+                                
+                                <input type="checkbox" id="campus" name="campus">
+                                <label for="campus">캠퍼스</label>
+                                
+                                <input type="checkbox" id="work" name="work">
+                                <label for="work">출근</label>
+                                
+                                <input type="checkbox" id="trip" name="trip">
+                                <label for="trip">여행</label>
+                                                            
+                                <input type="checkbox" id="date" name="date">
+                                <label for="date">데이트</label>
+                                                            
+                                <input type="checkbox" id="sea" name="sea">
+                                <label for="sea">바다</label>
+                                                            
+                                <input type="checkbox" id="hiking" name="hiking">
+                                <label for="hiking">등산</label>
+                                                            
+                                <input type="checkbox" id="picnic" name="picnic">
+                                <label for="picnic">소풍</label>
+                                                            
+                                <input type="checkbox" id="sports" name="sports">
+                                <label for="sports">운동</label>
+                                                            
+                                <input type="checkbox" id="festival" name="festival">
+                                <label for="festival">축제</label>
+                                                            
+                                <input type="checkbox" id="blind-date" name="blind-date">
+                                <label for="blind-date">소개팅</label>
+                                                            
+                                <input type="checkbox" id="meeting" name="meeting">
+                                <label for="meeting">상견례</label>
+                                                            
+                                <input type="checkbox" id="wedding" name="wedding">
+                                <label for="wedding">결혼식</label>
+                                                            
+                                <input type="checkbox" id="Interview" name="Interview">
+                                <label for="Interview">면접</label>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="BigRT">무드</p>
+                            <div class="form_inner">
+                                <input type="checkbox" id="lovely" name="lovely">
+                                <label for="lovely">러블리</label>
+                                
+                                <input type="checkbox" id="chic" name="chic">
+                                <label for="chic">시크</label>
+                                
+                                <input type="checkbox" id="street" name="street">
+                                <label for="street">스트릿</label>
+                                
+                                <input type="checkbox" id="casual" name="casual">
+                                <label for="casual">캐주얼</label>
+    
+                                <input type="checkbox" id="vintage" name="vintage">
+                                <label for="vintage">빈티지</label>
+                                
+                                <input type="checkbox" id="sporty" name="sporty">
+                                <label for="sporty">스포티</label>
+                                
+                                <input type="checkbox" id="bohemians" name="bohemians">
+                                <label for="bohemians">보헤미안</label>
+                                
+                                <input type="checkbox" id="punk" name="punk">
+                                <label for="punk">펑크</label>
+    
+                                <input type="checkbox" id="romantic" name="romantic">
+                                <label for="romantic">로맨틱</label>
+                                
+                                <input type="checkbox" id="edge" name="edge">
+                                <label for="edge">엣지</label>
+                                
+                                <input type="checkbox" id="classic" name="classic">
+                                <label for="classic">클래식</label>
+                                
+                                <input type="checkbox" id="high-fashion" name="high-fashion">
+                                <label for="high-fashion">하이패션</label>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="BigRT">컬러</p>
+                            <div class="form_inner">
+                                <input type="checkbox" id="black" name="black">
+                                <label for="black">블랙</label>
+                                
+                                <input type="checkbox" id="white" name="white">
+                                <label for="white">화이트</label>
+                                
+                                <input type="checkbox" id="monotone" name="monotone">
+                                <label for="monotone">모노톤</label>
+                                
+                                <input type="checkbox" id="brown" name="brown">
+                                <label for="brown">브라운</label>
+    
+                                <input type="checkbox" id="beige" name="beige">
+                                <label for="beige">베이지</label>
+                                
+                                <input type="checkbox" id="ivory" name="ivory">
+                                <label for="ivory">아이보리</label>
+                                
+                                <input type="checkbox" id="earthtone" name="earthtone">
+                                <label for="earthtone">어스톤</label>
+                                
+                                <input type="checkbox" id="modern-neutral" name="modern-neutral">
+                                <label for="modern-neutral">모던 뉴트럴</label>
+                                                            
+                                <input type="checkbox" id="vivid" name="vivid">
+                                <label for="vivid">비비드</label>
+                                
+                                <input type="checkbox" id="neon" name="neon">
+                                <label for="neon">네온</label>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="submit" id="categoryBtn-search">카테고리 적용하기</button>
+                </form>
+            </div>
+            <div id="gallerytab-box">
+                <span id="popular" class="active">인기순</span> | 
+                <span id="recommended">추천순</span>
+            </div>
+            <div id="gallery">
+                <a href="#" class="galleryM" onclick="h">
+                    <img src="img/contents/lookbook/m1-a.jpg" alt="남성 겨울 데일리 스트릿 스타일링">
+                </a>
+                <a href="lookbook_detail.html" class="galleryW" target="_blank">
+                    <img src="img/contents/lookbook/w1-a.jpg" alt="여성 겨울 데일리 스트릿 스타일링">
+                </a>
+                <a href="#" class="galleryM">
+                    <img src="img/contents/lookbook/m2-a.jpg" alt="남성 겨울 데일리 출근 시크 스타일링">
+                </a>
+                <a href="#" class="galleryW">
+                    <img src="img/contents/lookbook/w2-a.jpg" alt="여성 가을 봄 캠퍼스 데일리 스트릿 시크 스타일링">
+                </a>
+                <a href="#" class="galleryM">
+                    <img src="img/contents/lookbook/m3-a.jpg" alt="남성 가을 봄 데일리 시크 스타일링">
+                </a>
+                <a href="#" class="galleryW">
+                    <img src="img/contents/lookbook/w3-a.jpg" alt="여성 가을 겨울 캠퍼스 스트릿 스타일링">
+                </a>
+                <a href="#" class="galleryM">
+                    <img src="img/contents/lookbook/m4-a.jpg" alt="남성 겨울 캠퍼스 스트릿 스타일링">
+                </a>
+                <a href="#" class="galleryW">
+                    <img src="img/contents/lookbook/w4-a.jpg" alt="여성 가을 출근 러블리 스타일링">
+                </a>
+                <a href="#" class="galleryM">
+                    <img src="img/contents/lookbook/m5-a.jpg" alt="남성 가을 출근 시크 스타일링">
+                </a>
+                <a href="#" class="galleryW">
+                    <img src="img/contents/lookbook/w5-a.jpg" alt="여성 봄 가을 출근 캠퍼스 시크 스타일링">
+                </a>
+                <a href="#" class="galleryM">
+                    <img src="img/contents/lookbook/m6-a.jpg" alt="남성 겨울 출근 시크 스타일링">
+                </a>
+                <a href="#" class="galleryW">
+                    <img src="img/contents/lookbook/w6-a.jpg" alt="여성 가을 출근 시크 스타일링">
+                </a>
+                <a href="#" class="galleryM">
+                    <img src="img/contents/lookbook/m7-a.jpg" alt="남성 가을 데일리 캠퍼스 스트릿 스타일링">
+                </a>
+                <a href="#" class="galleryW">
+                    <img src="img/contents/lookbook/w7-a.jpg" alt="여성 가을 겨울 데일리 출근 캠퍼스 러블리 스타일링">
+                </a>
+                <a href="#" class="galleryM">
+                    <img src="img/contents/lookbook/m8-a.jpg" alt="남성 봄 가을 출근 데일리 시크 스타일링">
+                </a>
+                <a href="#" class="galleryW">
+                    <img src="img/contents/lookbook/w8-a.jpg" alt="여성 가을 겨울 출근 시크 스타일링">
+                </a>
+                <a href="#" class="galleryM">
+                    <img src="img/contents/lookbook/m9-a.jpg" alt="남성 가을 데일리 캠퍼스 스트릿 스타일링">
+                </a>
+                <a href="#" class="galleryW">
+                    <img src="img/contents/lookbook/w9-a.jpg" alt="여성 가을 출근 시크 스타일링">
+                </a>
+            </div>
+        </div>
+    </main>
+    <!--lookbook-contents End-->
+
+    <div id="TopBtnBox">
+        <a class="TopBtn arctic_scroll" href="#body" data-position="0">TOP</a>
+        <a class="logo_full" href="#">
+            <img src="img/Logo/logo_full.svg" alt="logo">
+        </a>
+    </div>
+    <!--TopBtnBox End-->
+
+    <footer id="MainFooter">
+        <div class="FooterLeft">
+            <ul>
+                <li>
+                    <p class="BigLT">CS. 02-0000-0000</p>
+                    <p class="SmallLT">월 - 금  09:00 - 18:00</p>
+                    <p class="SmallLT">주말,공휴일 휴무</p>
+                </li>
+                <li>
+                    <p class="BigLT">SNS.</p>
+                    <p class="SmallLT">Kakao. PICKTHEFIT</p>
+                    <p class="SmallLT">Instagram. @pick_the_fit</p>
+                    <p class="SmallLT">Youtube. 픽더핏[PICK THE FIT]</p>
+                </li>
+                <li class="FooterLeft-center">
+                    <ul>
+                        <li><a href="#"><p class="SmallBT">이용약관</p></a></li>
+                        <li><a href="#"><p class="SmallBT">개인정보처리방침</p></a></li>
+                        <li><a href="#"><p class="SmallBT">안전거래센터</p></a></li>
+                        <li><a href="#"><p class="SmallBT">제휴/광고문의</p></a></li>
+                        <li><a href="#"><p class="SmallBT">공지사항</p></a></li>
+                    </ul>
+                </li>
+                <li class="FooterLeft-bottom">
+                    <ul>
+                        <li><p class="SmallLT">사업자등록번호. 000-00-00000</p></li>
+                        <li><p class="SmallLT">통신판매업신고번호. 제0000-서울00-0000호</p></li>
+                    </ul>
+                    <ul>
+                        <li><p class="SmallLT">COMPANY. PICK THE FIT</p></li>
+                        <li><p class="SmallLT">대표이사. OOO</p></li>
+                        <li><p class="SmallLT">서울 OO구 OOO로 00길 0 OO타워 00층</p></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="FooterRight">
+            <a href="index.html">
+                <img src="img/Logo/logoW.png" alt="PICK THE FIT : 나와 패션을 더 가깝게">
+            </a>
+        </div>
+    </footer>
+    <!--footer End-->
+</body>
+</html>

@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="나와 패션을 더 가깝게">
+    <meta property="og:url" content="https://pickthefit.dothome.co.kr/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PICK THE FIT">
+    <meta property="og:description" content="나와 패션을 더 가깝게">
+    <meta property="og:image" content="http://pickthefit.dothome.co.kr/BrandName.jpg">
+    <title>PICK THE FIT</title>
+    <link rel="icon" type="image/x-icon" href="/path/to/your/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="CSS/master.css">
+    <link rel="stylesheet" type="text/css" href="CSS/font.css">
+    <link rel="stylesheet" type="text/css" href="CSS/product.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/jQuery.js"></script>
+    <script src="js/scroll.js"></script>
+</head>
+<body id="body">
+    <header id="MainHeader">
+        <div id="MainNav">
+            <h1 id="Logo">
+                <a href="index.html"><img src="img/Logo/logoW.png" alt="PICK THE FTI"></a>
+            </h1>
+            <!--Logo End-->
+            
+            <nav id="Gnb" class="Mobile-none">
+                <ul>
+                    <li id="ABOUT_btn"><a href="#"><h4>ABOUT</h4></a></li>
+                    <li id="LOOKBOOK_btn"><a href="lookbook.html"><h4>LOOKBOOK</h4></a></li>
+                    <li id="SHOP_btn"><a href="#"><h4>SHOP</h4></a></li>
+                    <li id="other_btn"><a href="#"><h4>other</h4></a></li>
+                </ul>
+            </nav>
+            <!--Gnb End-->
+
+            <div id="Lnb" class="Mobile-none">
+                <ul>
+                    <li id="Lnb1">
+                        <h6>회사 소개</h6>
+                        <ul>
+                            <li>
+                                <a href="#" class="SmallLT">인사말</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">브랜드</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">오시는 길</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="Lnb2">
+                        <h6>코디 룩북</h6>
+                        <ul>
+                            <li>
+                                <a href="lookbook.html" class="SmallLT">전체보기</a>
+                            </li>
+                            <li>
+                                <a href="lookbook.html" class="SmallLT">여성</a>
+                            </li>
+                            <li>
+                                <a href="lookbook.html" class="SmallLT">남성</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="Lnb3">
+                        <h6>쇼핑</h6>
+                        <ul>
+                            <li>
+                                <a href="#" class="SmallLT">전체보기</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">여성복</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">남성복</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">남여공용</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="Lnb4">
+                        <h6>기타 서비스</h6>
+                        <ul>
+                            <li>
+                                <a href="#" class="SmallLT">북마크</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">커뮤니티</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">후기</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--Lnb End-->
+
+            <div id="Snb">
+                <ul>
+                    <li class="Mobile-none">
+                        <a href="#">
+                            <p class="SnbIcon SI1">로그인</p>
+                            <p class="SmallLT">LOGIN</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="SnbIcon SI2">장바구니</p>
+                            <p class="SmallLT Mobile-none">CART</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="searchBtn-on">
+                            <p class="SnbIcon SI3">검색</p>
+                            <p class="SmallLT Mobile-none">SEARCH</p>
+                        </a>
+                    </li>
+                    <li class="Mobile-none">
+                        <a href="#">
+                            <p class="SnbIcon SI4">고객센터</p>
+                            <p class="SmallLT">CS</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#" id="toggleBtn-on" class="Mobile">열기</a>
+
+            <div id="Mobile-Nav"  class="Mobile">
+                <ul class="Mobile-profile">
+                    <li>
+                        <a class="profile">프로필 이미지</a>
+                        <p class="BigBT">OOO님, 안녕하세요!</p>
+                    </li>
+                    <li><a href="#" class="Mobile" id="toggleBtn-off">닫기</a></li>
+                </ul>
+                <ul class="Mobile-Snb">
+                    <li><a href="#"><p class="SmallBT">내 정보</p></a></li>
+                    <li><a href="#"><p class="SmallBT">로그아웃</p></a></li>
+                    <li><a href="#"><p class="SmallBT">고객센터</p></a></li>
+                </ul>
+                <ul class="Mobile-Gnb">
+                    <li>
+                        <a href="#">
+                            <p class="BigBT">회사 소개</p>
+                            <p class="PlusBtn">메뉴</p>
+                        </a>
+                        <ul class="Mobile-Lnb">
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">인사말</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">브랜드</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">오시는 길</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="BigBT">코디 룩북</p>
+                            <p class="PlusBtn">메뉴</p>
+                        </a>
+                        <ul class="Mobile-Lnb">
+                            <li>
+                                <a href="lookbook.html">
+                                    <p class="BigLT">전체보기</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="lookbook.html">
+                                    <p class="BigLT">여성</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="lookbook.html">
+                                    <p class="BigLT">남성</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="BigBT">쇼핑</p>
+                            <p class="PlusBtn">메뉴</p>
+                        </a>
+                        <ul class="Mobile-Lnb">
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">전체보기</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">여성복</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">남성복</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">남여공용</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="BigBT">기타 서비스</p>
+                            <p class="PlusBtn">메뉴</p>
+                        </a>
+                        <ul class="Mobile-Lnb">
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">북마크</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">커뮤니티</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">후기</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--MainNav End-->
+    </header>
+    <!--MainHeader End-->
+
+    <div id="Mobile-iconBar" class="Mobile">
+        <ul>
+            <li><a href="index.html"><img src="img/Icon_img/Home.svg" alt="HOME"></a></li>
+            <li><a href="lookbook.html"><img src="img/Icon_img/LookBook.svg" alt="LOOKBOOK"></a></li>
+            <li><a href="#"><img src="img/Icon_img/Shop.svg" alt="SHOP"></a></li>
+            <li><a href="#"><img src="img/Icon_img/MyPage.svg" alt="MY PAGE"></a></li>
+        </ul>
+    </div>
+    <!--bottomIconBox End-->
+
+    <div id="search-container">
+        <a href="#" id="searchBtn-off">닫기</a>
+        <div id="search-inner">
+            <h2>SEARCH</h2>
+            <div id="search-box">
+                <input type="search" placeholder="검색">
+                <input type="image" src="img/Icon_img/search_B.svg" alt="검색 버튼">
+            </div>
+
+            <div id="tab-box">
+                <ul class="tab-title">
+                    <li class="on SmallRT">전체</li>
+                    <li class="SmallRT">10대</li>
+                    <li class="SmallRT">20대</li>
+                    <li class="SmallRT">30대</li>
+                    <li class="SmallRT">40대 이상</li>
+                </ul>
+                <div class="tab-cont">
+                    <div class="on">
+                        <ul class="tab-list">
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">나이키(NIKE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">아디다스(ADIDAS)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">라코스테(LACOSTE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">뉴발란스(NEW BALANCE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">코스(COS)</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="tab-list">
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">나이키(NIKE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">아디다스(ADIDAS)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">뉴발란스(NEW BALANCE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">휠라(FILA)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">반스(VANS)</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="tab-list">
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">나이키(NIKE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">자라(ZARA)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">커버낫(COVERNAT)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">코스(COS)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">유니클로(UNIQLO)</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="tab-list">
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">라코스테(LACOSTE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">코스(COS)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">폴로 랄프 로렌(POLO RALPH LAUREN)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">타미 힐피거(TOMMY HILFIGER)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">빈폴(BEANPOLE)</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="tab-list">
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">라코스테(LACOSTE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">폴로 랄프 로렌(POLO RALPH LAUREN)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">닥스(DAKS)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">헤지스(HAZZYS)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">캠브리지 멤버스(CAMBRIDGE MEMBERS)</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--search-container End-->
+
+    <main id="product_container">
+        <div id="product_main">
+            <div>
+                <div id="preview">
+                    <ul>
+                        <li>
+                            <a href="img/contents/product/gallery/main.jpg">
+                                <img src="img/contents/product/preview/main.jpg" alt="파인딩 체크 머플러 (6color)">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="img/contents/product/gallery/Ivory.jpg">
+                                <img src="img/contents/product/preview/Ivory.jpg" alt="아이보리">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="img/contents/product/gallery/CoralPink.jpg">
+                                <img src="img/contents/product/preview/CoralPink.jpg" alt="코랄핑크">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="img/contents/product/gallery/GrayBlue.jpg">
+                                <img src="img/contents/product/preview/GrayBlue.jpg" alt="그레이블루">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="img/contents/product/gallery/Beige.jpg">
+                                <img src="img/contents/product/preview/Beige.jpg" alt="베이지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="img/contents/product/gallery/MiddleNavy.jpg">
+                                <img src="img/contents/product/preview/MiddleNavy.jpg" alt="미들네이비">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="img/contents/product/gallery/NaturalBlack.jpg">
+                                <img src="img/contents/product/preview/NaturalBlack.jpg" alt="네추럴블랙">
+                            </a>
+                        </li>
+                    </ul>
+                    <div id="preview_gallery"><img src="img/contents/product/gallery/main.jpg" alt="베테제 목도리"></div>
+                </div>
+                <div id="info_list">
+                    <ul>
+                        <li><p class="SmallLT">SHOP >  남녀공용 >  패션소품 >  머플러</p></li>
+                        <li class="product_title">
+                            <p class="BigRT brandName">베테제</p>
+                            <h3>파인딩 체크 머플러 (6color)</h3>
+                            <div style="display: flex; gap: 5px;">
+                                <h5  class="sale">56%</h5>
+                                <h5>17,000원</h5>
+                                <h6 class="fixedPrice"><del>39,800원</del></h6>
+                            </div>
+                            <div><img class="hot" src="img/Icon_img/HOT.svg" alt="hot"></div>
+                            <div>
+                                <p class="review_star SmallRT">★</p>
+                                <a href="#product_review" class="review_count SmallRT">후기 1,105개</a>
+                            </div>
+                        </li>
+                        <li class="product_color">
+                            <p class="BigRT">색상(Color) - Ivory</p>
+                            <form>
+                                <input type="radio" style="width: 50px; height: 50px;" name="radio" id="ivory" checked>
+                                <label for="ivory">Ivory</label>
+            
+                                <input type="radio" style="width: 50px; height: 50px;" name="radio" id="coralPink">
+                                <label for="coralPink">Coral Pink</label>
+            
+                                <input type="radio" style="width: 50px; height: 50px;" name="radio" id="grayBlue">
+                                <label for="grayBlue">Gray Blue</label>
+            
+                                <input type="radio" style="width: 50px; height: 50px;" name="radio" id="beige">
+                                <label for="beige">Beige</label>
+            
+                                <input type="radio" style="width: 50px; height: 50px;" name="radio" id="middleNavy">
+                                <label for="middleNavy">Middle Navy</label>
+            
+                                <input type="radio" style="width: 50px; height: 50px;" name="radio" id="naturalBlack">
+                                <label for="naturalBlack">Natural Black</label>
+                            </form>
+                        </li>
+                        <li class="product_size">
+                            <p class="BigRT">사이즈(Size)</p>
+                            <select class="SmallRT">
+                                <option value="" selected disabled>옵션 필수 선택</option>                      
+                                <option>FREE</option>
+                            </select>
+                        </li>
+                        <li class="product_extra">
+                            <p class="BigRT">추가 옵션(Extra)</p>
+                            <select class="SmallRT">
+                                <option value="" selected disabled>옵션 추가 선택</option>
+                                <option>옵션 추가 없음</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <div class="product_button">
+                        <a href="#" class="product_button-cart BigRT">장바구니 담기</a>
+                        <a href="#" class="product_button-buy BigRT">구매하기</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p id="forwarding" class="SmallRT">00월 00월(월) 도착 예정 · 도착 확률 79%</p>
+                <p  class="SmallRT">결제 2일 이내 출고 · CJ택배</p>
+            </div>
+        </div>
+        <div id="product_photoReview">
+            <div>
+                <h5>포토 구매평</h5>
+                <p class="BigBT">BEST PHOTO REVIEW</p>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <div>
+                            <p class="review_star">★★★★★</p>
+                            <p class="review_text SmallRT">
+                                와... 색감이 예쁘고 목도리가 큼지막해서 너무 귀여워요 라벨이 포인트가 돼서 좋아요💕 목도리가 되게 커서 담요로도 쓸 수 있어요!
+                            </p>
+                        </div>
+                        <p>
+                            <img src="img/contents/product/review/review1.jpg" alt="리뷰이미지1">
+                        </p>
+                    </li>
+                    <li>
+                        <div>
+                            <p class="review_star">★★★★★</p>
+                            <p class="review_text SmallRT">
+                                엄청 크고 엄청 따뜻해요 까끌거리지도 않고 두툼해요 색감도 귀여워요 목도리에 파묻히는 느낌이에요 포근포근..⛄ 완전 잘산템
+                            </p>
+                        </div>
+                        <p>
+                            <img src="img/contents/product/review/review2.jpg" alt="리뷰이미지2">
+                        </p>
+                    </li>
+                    <li>
+                        <div>
+                            <p class="review_star">★★★★★</p>
+                            <p class="review_text SmallRT">
+                                요즘 날씨가 많이 추워져서 목도리 하나 장만했어요! 체크무늬라서 코디하기 괜찮을까 걱정했는데 무난하게 어디에나 다 잘어울려요!! 너무 예뻐요
+                            </p>
+                        </div>
+                        <p>
+                            <img src="img/contents/product/review/review3.jpg" alt="리뷰이미지3">
+                        </p>
+                    </li>
+                    <li>
+                        <div>
+                            <p class="review_star">★★★★★</p>
+                            <p class="review_text SmallRT">
+                                어떤 코디에 매치해도 찰떡입니당 이렇게 저렇게 어떻게 묶어도 다 귀여워요..💖😍 재질도 좋고 두껍고 따뜻해요 데일리로 자주 착용합니당!!! 다들 당장 구매하세용!
+                            </p>
+                        </div>
+                        <p>
+                            <img src="img/contents/product/review/review4.jpg" alt="리뷰이미지4">
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="product_gnbBar">
+            <ul>
+                <li><a href="#product_detail" class="arctic_scroll on">상세정보</a></li>
+                <li><a href="#product_review"  class="arctic_scroll">후기</a></li>
+                <li><a href="#product_QnA"  class="arctic_scroll">Q&A</a></li>
+            </ul>
+        </div>
+        <div id="product_detail" class="section">
+            <div>
+                <img src="img/contents/product/detail/detail1.jpg" alt="제품 상세이미지1">
+                <img src="img/contents/product/detail/detail2.jpg" alt="제품 상세이미지2">
+                <img src="img/contents/product/detail/detail3.jpg" alt="제품 상세이미지3">
+                <img src="img/contents/product/detail/detail4.jpg" alt="제품 상세이미지4">
+                <img src="img/contents/product/detail/detail5.jpg" alt="제품 상세이미지5">
+            </div>
+            <div id="product_brand">
+                <p class="BigBT">베테제<span class="SmallRT">한국 · SINCE 2013</span></p>
+                <p class="SmallRT">
+                    베테제(VETEZE)는 'VIEW(견해)'와 'TIME(시간)', 'ZE(성별)'의 합성어로, 이에 대한 다양한 문화에서 영감을 받아 브랜드만의 시각으로 재해석하여 매 시즌 다채로운 컬렉션을 전개합니다.
+                </p>
+                <p class="BigRT"><a href="#">브랜드숍 바로가기</a></p>
+            </div>
+            <div id="product_objact1">
+                <h5>이런 상품들은 어떤가요?</h5>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/contents/product/objact/leathery_1.jpg" alt="레더리 머플러" class="images">
+                            <div class="product_title">
+                                <p class="SmallRT brandName">레더리(LEATHERY)</p>
+                                <p class="BigRT">브러쉬드 롱 머플러 [8COLOR]</p>
+                                <div>
+                                    <h6 class="sale">10%</h6>
+                                    <h6>29,700원</h6>
+                                    <p class="SmallRT fixedPrice"><del>33,000원</del></p>
+                                </div>
+                                <div>
+                                    <img class="Limit" src="img/Icon_img/Limit.svg" alt="한정판매">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/contents/product/objact/odds_1.jpg" alt="오드스튜디오 머플러" class="images">
+                            <div class="product_title">
+                                <p class="SmallRT brandName">오드스튜디오(ODDstudio)</p>
+                                <p class="BigRT">베이직 니트 체크 머플러 - 27COLOR</p>
+                                <div>
+                                    <h6 class="sale">43%</h6>
+                                    <h6>21,900원</h6>
+                                    <p class="SmallRT fixedPrice"><del>39,000원</del></p>
+                                </div>
+                                <div>
+                                    <img class="hot" src="img/Icon_img/HOT.svg" alt="HOT">
+                                    <img class="TheDay" src="img/Icon_img/TheDay.svg" alt="당일배송">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/contents/product/objact/anotherView_1.jpg" alt="어나더뷰 머플러" class="images">
+                            <div class="product_title">
+                                <p class="SmallRT brandName">어나더뷰(Another View)</p>
+                                <p class="BigRT">빅사이즈 모헤어 볼드 파스텔 체크 머플러(9color)</p>
+                                <div>
+                                    <h6 class="sale">70%</h6>
+                                    <h6>4,650원</h6>
+                                    <p class="SmallRT fixedPrice"><del>15,500원</del></p>
+                                </div>
+                                <div>
+                                    <img class="hot" src="img/Icon_img/HOT.svg" alt="HOT">
+                                    <img class="Only" src="img/Icon_img/Only.svg" alt="단독세일">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="product_objact2">
+                <h5>베테제(VETEZE)의 다른 상품들이에요</h5>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/contents/product/objact/vetezeA_1.jpg" alt="베테제 모자" class="images">
+                            <div class="product_title">
+                                <p class="SmallRT brandName">베테제(VETEZE)</p>
+                                <p class="BigRT">오브에 AA 볼캡 (5color)</p>
+                                <div>
+                                    <h6 class="sale">15%</h6>
+                                    <h6>35,700원</h6>
+                                    <p class="SmallRT fixedPrice"><del>42,000원</del></p>
+                                </div>
+                                <div>
+                                    <img class="hot" src="img/Icon_img/HOT.svg" alt="HOT">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/contents/product/objact/vetezeB_1.jpg" alt="베테제 자켓" class="images">
+                            <div class="product_title">
+                                <p class="SmallRT brandName">베테제(VETEZE)</p>
+                                <p class="BigRT">빈티지무드 베이스볼 자켓 (네이비)</p>
+                                <div>
+                                    <h6 class="sale">31%</h6>
+                                    <h6>85,600원</h6>
+                                    <p class="SmallRT fixedPrice"><del>124,000원</del></p>
+                                </div>
+                                <div>
+                                    <img class="TheDay" src="img/Icon_img/TheDay.svg" alt="당일배송">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/contents/product/objact/vetezeC_1.jpg" alt="베테제 인기 잡화" class="images">
+                            <div class="product_title">
+                                <p class="SmallRT brandName">베테제(VETEZE)</p>
+                                <p class="BigRT">[BEST/선착순특가] 베테제 인기 잡화 제품</p>
+                                <div>
+                                    <h6 class="sale">88%</h6>
+                                    <h6>5,900원</h6>
+                                    <p class="SmallRT fixedPrice"><del>49,000원</del></p>
+                                </div>
+                                <div>
+                                    <img class="hot" src="img/Icon_img/HOT.svg" alt="HOT">
+                                    <img class="Limit" src="img/Icon_img/Limit.svg" alt="한정판매">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="product_review" class="section">
+            <div>
+                <h5>룩북(1)</h5>
+                <p class="BigBT">LOOKBOOK</p>
+                <div class="product_review-lookbook">
+                    <a href="#"><img src="img/contents/product/review/lookbook.jpg" alt="룩북 베테제 머플러 코디"></a>
+                </div>
+            </div>
+            <div>
+                <h5>후기(1,105)</h5>
+                <p class="BigBT">REVIEW</p>
+                <ul class="product_review-list1">
+                    <li>
+                        <a href="#">
+                            <img src="img/contents/product/review/review1-1.jpg" alt="리뷰이미지1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/contents/product/review/review2-1.jpg" alt="리뷰이미지2">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/contents/product/review/review3-1.jpg" alt="리뷰이미지3">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/contents/product/review/review4-1.jpg" alt="리뷰이미지4">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="BigRT">+더보기</p>
+                            <img src="img/contents/product/review/review5.jpg" alt="리뷰이미지5">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="product_review-list2">
+                    <li>
+                        <a href="#">
+                            <div>
+                                <p class="review_profile">프로필</p>
+                                <div>
+                                    <p class="SmallBT">koko1234<span class="date SmallRT">2025.01.24</span></p>
+                                    <ul class="review_star SmallBT">
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li class="score">5점</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <img src="img/contents/product/review/review1.jpg" alt="리뷰이미지1">
+                            <p  class="SmallRT">
+                                와... 색감이 예쁘고 목도리가 큼지막해서 너무 귀여워요 라벨이 포인트가 돼서 좋아요💕 목도리가 되게 커서 담요로도 쓸 수 있어요!
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <p class="review_profile">프로필</p>
+                                <div>
+                                    <p  class="SmallBT">aaaa01<span class="date SmallRT">2025.01.02</span></p>
+                                    <ul class="review_star SmallBT">
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li class="score">5점</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <img src="img/contents/product/review/review2.jpg" alt="리뷰이미지2">
+                            <p class="SmallRT">
+                                엄청 크고 엄청 따뜻해요 까끌거리지도 않고 두툼해요 색감도 귀여워요 목도리에 파묻히는 느낌이에요 포근포근..⛄ 완전 잘산템
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <p class="review_profile">프로필</p>
+                                <div>
+                                    <p class="SmallBT">명탐정유쾌한<span class="date SmallRT">2025.01.02</span></p>
+                                    <ul class="review_star SmallBT">
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li class="review_star-gray">★</li>
+                                        <li class="score">4점</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="SmallRT">
+                                엄청 크고 두꺼워서 목에 두르기가 조금 어려워요..!! 근데 디자인은 너무 예뻐서 잘 하고 다녀요 ㅎㅎ
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <p class="review_profile">프로필</p>
+                                <div>
+                                    <p class="SmallBT">브이_Vv<span class="date SmallRT">2025.01.01</span></p>
+                                    <ul class="review_star SmallBT">
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li class="score">5점</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <img src="img/contents/product/review/review3.jpg" alt="리뷰이미지3">
+                            <p class="SmallRT">
+                                요즘 날씨가 많이 추워져서 목도리 하나 장만했어요! 체크무늬라서 코디하기 괜찮을까 걱정했는데 무난하게 어디에나 다 잘어울려요!! 너무 예뻐요
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <p class="review_profile">프로필</p>
+                                <div>
+                                    <p class="SmallBT">ming06<span class="date SmallRT">2024.12.29</span></p>
+                                    <ul class="review_star SmallBT">
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li class="review_star-gray">★</li>
+                                        <li class="score">4점</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="SmallRT">
+                                새해 되기 전에 목도리를 새로 사려고 했는데 바로 할인가로 Get!! 럭키~ ㅋㅋㅋ 귀엽고 따뜻하고 다 좋은데 한가지 아쉬운 점은 털이 살짝 빠져서 착용 전 세탁 필수인 거 같아요! 세탁하고 롤테이프로 한 번 정리해주니까 괜찮았어용ㅎㅎ 친구들이 귀엽다고 해줘서 완전 만족해요
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <p><a href="#" class="product_review-button BigRT">1,105개의 후기 전체보기</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="product_QnA" class="section">
+            <h5>상품문의(15)</h5>
+            <p class="BigBT">Q&A</p>
+            <ul>
+                <li>
+                    <a href="#">
+                        <div>
+                            <p class="BigBT">배송</p>
+                            <p class="BigBT">배송관련 문의드려요</p>
+                            <p class="SmallBT">min***<span class="date SmallRT">2024.12.26</span></p>
+                        </div>
+                        <p class="qna_btn">
+                            <img src="img/Icon_img/bottomBtn.svg" alt="아래로 펼치기 버튼">
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <p class="BigBT">상품상세</p>
+                            <p class="BigBT">상품 문의</p>
+                            <p class="SmallBT">imm***<span class="date SmallRT">2024.10.20</span></p>
+                        </div>
+                        <p class="qna_btn">
+                            <img src="img/Icon_img/bottomBtn.svg" alt="아래로 펼치기 버튼">
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <p class="BigBT">배송</p>
+                            <p class="BigBT">배송 문의</p>
+                            <p class="SmallBT">cba***<span class="date SmallRT">2024.06.08</span></p>
+                        </div>
+                        <p class="qna_btn">
+                            <img src="img/Icon_img/bottomBtn.svg" alt="아래로 펼치기 버튼">
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <p class="BigBT">반품/교환</p>
+                            <p class="BigBT">반품 신청드려요</p>
+                            <p class="SmallBT">01***<span class="date SmallRT">2024.05.04</span></p>
+                        </div>
+                        <p class="qna_btn">
+                            <img src="img/Icon_img/bottomBtn.svg" alt="아래로 펼치기 버튼">
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <p class="BigBT">반품/교환</p>
+                            <p class="BigBT">색상교환 문의드립니다.</p>
+                            <p class="SmallBT">k***<span class="date SmallRT">2024.03.15</span></p>
+                        </div>
+                        <p class="qna_btn">
+                            <img src="img/Icon_img/bottomBtn.svg" alt="아래로 펼치기 버튼">
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="qna_ask-button BigRT">판매자 문의하기</a>
+                        <a href="#" class="qna_all-button BigRT">상품문의 전체보기</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <div id="TopBtnBox">
+        <a class="TopBtn arctic_scroll" href="#body" data-position="0">TOP</a>
+        <a class="logo_full" href="#">
+            <img src="img/Logo/logo_full.svg" alt="logo">
+        </a>
+    </div>
+    <!--TopBtnBox End-->
+
+    <footer id="MainFooter">
+        <div class="FooterLeft">
+            <ul>
+                <li>
+                    <p class="BigLT">CS. 02-0000-0000</p>
+                    <p class="SmallLT">월 - 금  09:00 - 18:00</p>
+                    <p class="SmallLT">주말,공휴일 휴무</p>
+                </li>
+                <li>
+                    <p class="BigLT">SNS.</p>
+                    <p class="SmallLT">Kakao. PICKTHEFIT</p>
+                    <p class="SmallLT">Instagram. @pick_the_fit</p>
+                    <p class="SmallLT">Youtube. 픽더핏[PICK THE FIT]</p>
+                </li>
+                <li class="FooterLeft-center">
+                    <ul>
+                        <li><a href="#"><p class="SmallBT">이용약관</p></a></li>
+                        <li><a href="#"><p class="SmallBT">개인정보처리방침</p></a></li>
+                        <li><a href="#"><p class="SmallBT">안전거래센터</p></a></li>
+                        <li><a href="#"><p class="SmallBT">제휴/광고문의</p></a></li>
+                        <li><a href="#"><p class="SmallBT">공지사항</p></a></li>
+                    </ul>
+                </li>
+                <li class="FooterLeft-bottom">
+                    <ul>
+                        <li><p class="SmallLT">사업자등록번호. 000-00-00000</p></li>
+                        <li><p class="SmallLT">통신판매업신고번호. 제0000-서울00-0000호</p></li>
+                    </ul>
+                    <ul>
+                        <li><p class="SmallLT">COMPANY. PICK THE FIT</p></li>
+                        <li><p class="SmallLT">대표이사. OOO</p></li>
+                        <li><p class="SmallLT">서울 OO구 OOO로 00길 0 OO타워 00층</p></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="FooterRight">
+            <a href="index.html">
+                <img src="img/Logo/logoW.png" alt="PICK THE FIT : 나와 패션을 더 가깝게">
+            </a>
+        </div>
+    </footer>
+    <!--footer End-->
+</body>
+</html>

@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="나와 패션을 더 가깝게">
+    <meta property="og:url" content="https://pickthefit.dothome.co.kr/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PICK THE FIT">
+    <meta property="og:description" content="나와 패션을 더 가깝게">
+    <meta property="og:image" content="http://pickthefit.dothome.co.kr/BrandName.jpg">
+    <title>PICK THE FIT</title>
+    <link rel="stylesheet" type="text/css" href="CSS/master.css">
+    <link rel="stylesheet" type="text/css" href="CSS/font.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/jQuery.js"></script>
+    <script src="js/scroll.js"></script>
+</head>
+<body id="body">
+    <header id="MainHeader">
+        <div id="MainNav">
+            <h1 id="Logo">
+                <a href="index.html"><img src="img/Logo/logoW.png" alt="PICK THE FTI"></a>
+            </h1>
+            <!--Logo End-->
+            
+            <nav id="Gnb" class="Mobile-none">
+                <ul>
+                    <li id="ABOUT_btn"><a href="#"><h4>ABOUT</h4></a></li>
+                    <li id="LOOKBOOK_btn"><a href="#"><h4>LOOKBOOK</h4></a></li>
+                    <li id="SHOP_btn"><a href="#"><h4>SHOP</h4></a></li>
+                    <li id="other_btn"><a href="#"><h4>other</h4></a></li>
+                </ul>
+            </nav>
+            <!--Gnb End-->
+
+            <div id="Lnb" class="Mobile-none">
+                <ul>
+                    <li id="Lnb1">
+                        <h6>회사 소개</h6>
+                        <ul>
+                            <li>
+                                <a href="#" class="SmallLT">인사말</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">브랜드</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">오시는 길</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="Lnb2">
+                        <h6>코디 룩북</h6>
+                        <ul>
+                            <li>
+                                <a href="lookbook.html" class="SmallLT">전체보기</a>
+                            </li>
+                            <li>
+                                <a href="lookbook.html" class="SmallLT">여성</a>
+                            </li>
+                            <li>
+                                <a href="lookbook.html" class="SmallLT">남성</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="Lnb3">
+                        <h6>쇼핑</h6>
+                        <ul>
+                            <li>
+                                <a href="#" class="SmallLT">전체보기</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">여성복</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">남성복</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">남여공용</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="Lnb4">
+                        <h6>기타 서비스</h6>
+                        <ul>
+                            <li>
+                                <a href="#" class="SmallLT">북마크</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">커뮤니티</a>
+                            </li>
+                            <li>
+                                <a href="#" class="SmallLT">후기</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--Lnb End-->
+
+            <div id="Snb">
+                <ul>
+                    <li class="Mobile-none">
+                        <a href="#">
+                            <p class="SnbIcon SI1">로그인</p>
+                            <p class="SmallLT">LOGIN</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="SnbIcon SI2">장바구니</p>
+                            <p class="SmallLT Mobile-none">CART</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="searchBtn-on">
+                            <p class="SnbIcon SI3">검색</p>
+                            <p class="SmallLT Mobile-none">SEARCH</p>
+                        </a>
+                    </li>
+                    <li class="Mobile-none">
+                        <a href="#">
+                            <p class="SnbIcon SI4">고객센터</p>
+                            <p class="SmallLT">CS</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#" id="toggleBtn-on" class="Mobile">열기</a>
+
+            <div id="Mobile-Nav"  class="Mobile">
+                <ul class="Mobile-profile">
+                    <li>
+                        <a class="profile">프로필 이미지</a>
+                        <p class="BigBT">OOO님, 안녕하세요!</p>
+                    </li>
+                    <li><a href="#" class="Mobile" id="toggleBtn-off">닫기</a></li>
+                </ul>
+                <ul class="Mobile-Snb">
+                    <li><a href="#"><p class="SmallBT">내 정보</p></a></li>
+                    <li><a href="#"><p class="SmallBT">로그아웃</p></a></li>
+                    <li><a href="#"><p class="SmallBT">고객센터</p></a></li>
+                </ul>
+                <ul class="Mobile-Gnb">
+                    <li>
+                        <a href="#">
+                            <p class="BigBT">회사 소개</p>
+                            <p class="PlusBtn">메뉴</p>
+                        </a>
+                        <ul class="Mobile-Lnb">
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">인사말</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">브랜드</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">오시는 길</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="BigBT">코디 룩북</p>
+                            <p class="PlusBtn">메뉴</p>
+                        </a>
+                        <ul class="Mobile-Lnb">
+                            <li>
+                                <a href="lookbook.html">
+                                    <p class="BigLT">전체보기</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="lookbook.html">
+                                    <p class="BigLT">여성</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="lookbook.html">
+                                    <p class="BigLT">남성</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="BigBT">쇼핑</p>
+                            <p class="PlusBtn">메뉴</p>
+                        </a>
+                        <ul class="Mobile-Lnb">
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">전체보기</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">여성복</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">남성복</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">남여공용</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="BigBT">기타 서비스</p>
+                            <p class="PlusBtn">메뉴</p>
+                        </a>
+                        <ul class="Mobile-Lnb">
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">북마크</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">커뮤니티</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="BigLT">후기</p>
+                                    <p class="NextBtn">다음</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--MainNav End-->
+    </header>
+    <!--MainHeader End-->
+
+    <div id="Mobile-iconBar" class="Mobile">
+        <ul>
+            <li><a href="index.html"><img src="img/Icon_img/Home.svg" alt="HOME"></a></li>
+            <li><a href="lookbook.html"><img src="img/Icon_img/LookBook.svg" alt="LOOKBOOK"></a></li>
+            <li><a href="#"><img src="img/Icon_img/Shop.svg" alt="SHOP"></a></li>
+            <li><a href="#"><img src="img/Icon_img/MyPage.svg" alt="MY PAGE"></a></li>
+        </ul>
+    </div>
+    <!--bottomIconBox End-->
+
+    <div id="search-container">
+        <a href="#" id="searchBtn-off">닫기</a>
+        <div id="search-inner">
+            <h2>SEARCH</h2>
+            <div id="search-box">
+                <input type="search" placeholder="검색">
+                <input type="image" src="img/Icon_img/search_B.svg" alt="검색 버튼">
+            </div>
+
+            <div id="tab-box">
+                <ul class="tab-title">
+                    <li class="on SmallRT">전체</li>
+                    <li class="SmallRT">10대</li>
+                    <li class="SmallRT">20대</li>
+                    <li class="SmallRT">30대</li>
+                    <li class="SmallRT">40대 이상</li>
+                </ul>
+                <div class="tab-cont">
+                    <div class="on">
+                        <ul class="tab-list">
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">나이키(NIKE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">아디다스(ADIDAS)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">라코스테(LACOSTE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">뉴발란스(NEW BALANCE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">코스(COS)</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="tab-list">
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">나이키(NIKE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">아디다스(ADIDAS)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">뉴발란스(NEW BALANCE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">휠라(FILA)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">반스(VANS)</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="tab-list">
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">나이키(NIKE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">자라(ZARA)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">커버낫(COVERNAT)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">코스(COS)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">유니클로(UNIQLO)</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="tab-list">
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">라코스테(LACOSTE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">코스(COS)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">폴로 랄프 로렌(POLO RALPH LAUREN)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">타미 힐피거(TOMMY HILFIGER)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">빈폴(BEANPOLE)</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="tab-list">
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">라코스테(LACOSTE)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">폴로 랄프 로렌(POLO RALPH LAUREN)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">닥스(DAKS)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">헤지스(HAZZYS)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="SmallRT">캠브리지 멤버스(CAMBRIDGE MEMBERS)</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--search-container End-->
+
+    <div id="MainBanner">
+        <a href="#" class="BannerImg BImg1">
+            <img src="img/banner/2024FWfahsionCollection.jpg" alt="2024 fw 패션 기획전">
+        </a>
+        <a href="#" class="BannerImg BImg2">
+            <img src="img/banner/Event.jpg" alt="코디set or 10만원이상 구매시 사은품 증정 이벤트">
+        </a>
+        <a href="#" class="BannerImg BImg3">
+            <img src="img/banner/sticker.png" alt="PICK THE FIT : 나와 패션을 더 가깝게">
+        </a>
+    </div>
+    <!--MainBanner End-->
+
+    <div id="IconBox">
+        <a href="#" class="icon">
+            <img src="img/Icon_img/IconBar/EVENT.png" alt="이벤트&쿠폰">
+            <p class="SmallRT">EVENT&<br>COUPON</p>
+        </a>
+        <a href="#" class="icon">
+            <img src="img/Icon_img/IconBar/ONE_WEEK.png" alt="일주일 코디 모음">
+            <p class="SmallRT">ONE WEEK<br>LOOKBOOK</p>
+        </a>
+        <a href="#" class="icon">
+            <img src="img/Icon_img/IconBar/WOMAN.png" alt="여성 코디 스타일링">
+            <p class="SmallRT">WOMAN'S<br>STYLING</p>
+        </a>
+        <a href="#" class="icon">
+            <img src="img/Icon_img/IconBar/MAN.png" alt="남성 코디 스타일링">
+            <p class="SmallRT">MAN'S<br>STYLING</p>
+        </a>
+        <a href="#" class="icon">
+            <img src="img/Icon_img/IconBar/COUPLE.png" alt="트윈룩&커플룩">
+            <p class="SmallRT">TWIN&<br>COUPLE</p>
+        </a>
+    </div>
+    <!--IconBox End-->
+
+    <main id="contents">
+        <section id="Brand">
+            <ul>
+                <li class="brand_poster">
+                    <img src="img/contents/brand/brand_poster.png" alt="픽더핏 브랜드 포스터">
+                </li>
+                <li class="brand_story">
+                    <img src="img/contents/brand/brand_story.svg" alt="픽더핏 브랜드 스토리">
+                    <h6>
+                        BRAND STORY
+                        '나와 패션을 더 가깝게'
+                        패션 룩북&쇼핑 서비스 브랜드 "픽 더 핏"은
+                        [PICK(고르다)]과 [FIT(맞다)]으로
+                        '나에게 맞는 것을 고르다' 라는 뜻을 가지고 있습니다.
+
+                        패션에 관심있는 모든 이들을 대상으로, 쉽고 편리한
+                        스타일링 가이드를 제공합니다.
+                        트렌드와 기본을 모두 담아,
+                        최신 유행 패션부터 기본 아이템까지.
+                        다양한 코디를 통해 스타일을 비교하고 영감을 받을 수
+                        있는 공간을 제공합니다.
+
+                        패션은 어려운 것이 아니라,
+                        누구나 즐길 수 있는 것입니다.
+                    </h6>
+                </li>
+            </ul>
+        </section>
+        <section id="Styling">
+            <div class="W_Styling">
+                <h3>Woman's FW Styling</h3>
+                <a class="MoreBtn" href="lookbook.html">VIEW MORE</a>
+                <div class="StyleImg">
+                    <div class="slide mySwiper" #swiperRef="">
+                        <div class="swiper-wrapper">
+                            <a href="lookbook_detail.html" target="_blank" class="swiper-slide">
+                                <img src="img/contents/styling/W1.png" alt="">
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <img src="img/contents/styling/W2.png" alt="">
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <img src="img/contents/styling/W3.png" alt="">
+                            </a>
+                        </div>
+                        <p class="swiper-button-prev Mobile BigBT">
+                            <img src="img/Icon_img/PrevBtn.svg" alt="이전">
+                        </p>
+                        <p class="swiper-button-next Mobile BigBT">
+                            <img src="img/Icon_img/NextBtn.svg" alt="다음">
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="M_Styling">
+                <h3>Man's FW Styling</h3>
+                <a class="MoreBtn" href="lookbook.html">VIEW MORE</a>
+                <div class="StyleImg">
+                    <div class="scroll">
+                        <a href="#">
+                            <img src="img/contents/styling/M1.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/contents/styling/M2.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/contents/styling/M3.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/contents/styling/M4.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/contents/styling/M5.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/contents/styling/M6.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="BestSeller">
+            <div class="W_Best">
+                <div class="Best_Header">
+                    <h3>Woman's Best Seller</h3>
+                    <a href="#"><h6>전체보기</h6></a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img class="images" src="img/contents/BestSeller/W_Best_A1.jpg" alt="">
+                            <p class="SmallRT brandName">자스민벨</p>
+                            <p class="BigRT">
+                                울 오버핏 라운드 긴팔 겨울 파스텔 니트
+                            </p>
+                            <div class="product_title">
+                                <div>
+                                    <h6 class="sale">45%</h6>
+                                    <h6>15,950원</h6>
+                                    <p class="SmallRT fixedPrice"><del>29,000원</del></p>
+                                </div>
+                                <div>
+                                    <img class="hot" src="img/Icon_img/HOT.svg" alt="hot">
+                                    <img class="Only" src="img/Icon_img/Only.svg" alt="단독특가">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="images" src="img/contents/BestSeller/W_Best_B1.jpg" alt="">
+                            <p class="SmallRT brandName">모어핏</p>
+                            <p class="BigRT">
+                                3단 기장/S-2XL/로킷 데님 와이드핏 롱 워싱 데님 팬츠
+                            </p>
+                            <div class="product_title">
+                                <div>
+                                    <h6 class="sale">30%</h6>
+                                    <h6>22,260원</h6>
+                                    <p class="SmallRT fixedPrice"><del>31,800원</del></p>
+                                </div>
+                                <div>
+                                    <img class="hot" src="img/Icon_img/HOT.svg" alt="hot">
+                                    <img class="TheDay" src="img/Icon_img/TheDay.svg" alt="당일배송">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="images" src="img/contents/BestSeller/W_Best_C1.jpg" alt="">
+                            <p class="SmallRT brandName">블리즈</p>
+                            <p class="BigRT">
+                                후드 양털 떡볶이 퍼자켓 숏코트 덤블점퍼
+                            </p>
+                            <div class="product_title">
+                                <div>
+                                    <h6 class="sale">20%</h6>
+                                    <h6>41,120원</h6>
+                                    <p class="SmallRT fixedPrice"><del>51,400원</del></p>
+                                </div>
+                                <div>
+                                    <img class="hot" src="img/Icon_img/HOT.svg" alt="hot">
+                                    <img class="Limit" src="img/Icon_img/Limit.svg" alt="한정판매">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="M_Best">
+                <div class="Best_Header">
+                    <h3>Man's Best Seller</h3>
+                    <a href="#"><h6>전체보기</h6></a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img class="images" src="img/contents/BestSeller/M_Best_A1.jpg" alt="">
+                            <p class="SmallRT brandName">이룰</p>
+                            <p class="BigRT">
+                                포레스트 하우스 오버핏 레터링 맨투맨
+                            </p>
+                            <div class="product_title">
+                                <div>
+                                    <h6 class="sale">50%</h6>
+                                    <h6>20,950원</h6>
+                                    <p class="SmallRT fixedPrice"><del>41,900원</del></p>
+                                </div>
+                                <div>
+                                    <img class="hot" src="img/Icon_img/HOT.svg" alt="hot">
+                                    <img class="Only" src="img/Icon_img/Only.svg" alt="단독특가">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="images" src="img/contents/BestSeller/M_Best_B1.jpg" alt="">
+                            <p class="SmallRT brandName">하우룩</p>
+                            <p class="BigRT">
+                                [하우룩] 양털 스웨이드 무스탕 자켓 겨울 아우터
+                            </p>
+                            <div class="product_title">
+                                <div>
+                                    <h6 class="sale">48%</h6>
+                                    <h6>56,990원</h6>
+                                    <p class="SmallRT fixedPrice"><del>109,600원</del></p>
+                                </div>
+                                <div>
+                                    <img class="hot" src="img/Icon_img/HOT.svg" alt="hot">
+                                    <img class="TheDay" src="img/Icon_img/TheDay.svg" alt="당일배송">
+                                </div>
+                            </div>
+                        </a>    
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="images" src="img/contents/BestSeller/M_Best_C1.jpg" alt="">
+                            <p class="SmallRT brandName">클라쓰업</p>
+                            <p class="BigRT">
+                                기모 세미 와이드 샌드워싱 뒷밴딩 데님 청바지 팬츠
+                            </p>
+                            <div class="product_title">
+                                <div>
+                                    <h6 class="sale">45%</h6>
+                                    <h6>26,910원</h6>
+                                    <p class="SmallRT fixedPrice"><del>59,800원</del></p>
+                                </div>
+                                <div>
+                                    <img class="hot" src="img/Icon_img/HOT.svg" alt="hot">
+                                    <img class="Limit" src="img/Icon_img/Limit.svg" alt="한정판매">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="StreetBrand">
+            <h3>Street & Casual Brand Collection</h3>
+            <div>
+                <a class="Street1" href="#">
+                    <img src="img/contents/street/NIKE.jpg" alt="나이키">
+                </a>
+                <a class="Street2" href="#">
+                    <img src="img/contents/street/NB.jpg" alt="뉴발란스">
+                </a>
+                <a class="Street3" href="#">
+                    <img src="img/contents/street/VANS.jpg" alt="반스">
+                </a>
+                <a class="Street4" href="#">
+                    <img src="img/contents/street/Covernat.jpg" alt="커버낫">
+                </a>
+                <a class="Street5" href="#">
+                    <img src="img/contents/street/Discovery.jpg" alt="디스커버리">
+                </a>
+                <a class="Street6" href="#">
+                    <img src="img/contents/street/TheNorthFace.jpg" alt="더노스페이스">
+                </a>
+            </div>
+            <a class="MoreBtn" href="#">VIEW MORE</a>
+        </section>
+        <section id="BestReview">
+            <h3>BEST REVIEW</h3>
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="img/contents/review/1.jpg" alt="">
+                    <img src="img/contents/review/2.jpg" alt="">
+                    <img src="img/contents/review/3.jpg" alt="">
+                    <img src="img/contents/review/4.jpg" alt="">
+                    <img src="img/contents/review/5.jpg" alt="">
+                    <img src="img/contents/review/6.jpg" alt="">
+                    <img src="img/contents/review/7.jpg" alt="">
+                    <img src="img/contents/review/8.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--contents End-->
+    
+    <div id="TopBtnBox">
+        <a class="TopBtn arctic_scroll" href="#body" data-position="0">TOP</a>
+        <a class="logo_full" href="#">
+            <img src="img/Logo/logo_full.svg" alt="logo">
+        </a>
+    </div>
+    <!--TopBtnBox End-->
+
+    <footer id="MainFooter">
+        <div class="FooterLeft">
+            <ul>
+                <li>
+                    <p class="BigLT">CS. 02-0000-0000</p>
+                    <p class="SmallLT">월 - 금  09:00 - 18:00</p>
+                    <p class="SmallLT">주말,공휴일 휴무</p>
+                </li>
+                <li>
+                    <p class="BigLT">SNS.</p>
+                    <p class="SmallLT">Kakao. PICKTHEFIT</p>
+                    <p class="SmallLT">Instagram. @pick_the_fit</p>
+                    <p class="SmallLT">Youtube. 픽더핏[PICK THE FIT]</p>
+                </li>
+                <li class="FooterLeft-center">
+                    <ul>
+                        <li><a href="#"><p class="SmallBT">이용약관</p></a></li>
+                        <li><a href="#"><p class="SmallBT">개인정보처리방침</p></a></li>
+                        <li><a href="#"><p class="SmallBT">안전거래센터</p></a></li>
+                        <li><a href="#"><p class="SmallBT">제휴/광고문의</p></a></li>
+                        <li><a href="#"><p class="SmallBT">공지사항</p></a></li>
+                    </ul>
+                </li>
+                <li class="FooterLeft-bottom">
+                    <ul>
+                        <li><p class="SmallLT">사업자등록번호. 000-00-00000</p></li>
+                        <li><p class="SmallLT">통신판매업신고번호. 제0000-서울00-0000호</p></li>
+                    </ul>
+                    <ul>
+                        <li><p class="SmallLT">COMPANY. PICK THE FIT</p></li>
+                        <li><p class="SmallLT">대표이사. OOO</p></li>
+                        <li><p class="SmallLT">서울 OO구 OOO로 00길 0 OO타워 00층</p></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="FooterRight">
+            <a href="index.html">
+                <img src="img/Logo/logoW.png" alt="PICK THE FIT : 나와 패션을 더 가깝게">
+            </a>
+        </div>
+    </footer>
+    <!--footer End-->
+
+</body>
+</html>
